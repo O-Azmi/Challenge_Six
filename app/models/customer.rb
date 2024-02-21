@@ -1,2 +1,5 @@
 class Customer < ApplicationRecord
-end
+    def self.ransackable_attributes(auth_object = nil)
+      %w[full_name phone_number email_address notes]
+    end
+  end
