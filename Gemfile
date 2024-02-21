@@ -27,7 +27,7 @@ gem "stimulus-rails"
 gem "jbuilder"
 
 # Add Active Admin GEM
-gem "activeadmin"
+gem 'activeadmin'
 
 # Add devise gem
 gem "devise"
