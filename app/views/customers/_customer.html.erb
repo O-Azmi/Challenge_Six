@@ -1,0 +1,15 @@
+<div class= "container">
+<h2 ><%= customer.full_name %></h2>
+<div class="customer-info">
+  <div class="customer-image">
+    <% if customer.image.attached? %>
+      <%= image_tag customer.image %>
+    <% end %>
+  </div>
+  <div class="customer-details">
+    <p><strong>Phone Number:</strong> <%= customer.phone_number %></p>
+    <p><strong>Email Address:</strong> <%= customer.email_address %></p>
+    <p><strong>Notes:</strong> <%= customer.notes %></p>
+  </div>
+</div>
+</div>

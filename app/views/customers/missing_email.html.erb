@@ -1,0 +1,10 @@
+<h1>Customers that do not have an email</h1>
+
+<%= link_to 'All Customers', customers_path %>
+<%= link_to 'Customers ordered by name', alphabetized_customers_path %>
+
+<div class = "customers-container">   
+<% @customers.each do |customer| %>
+  <%= render partial: 'customer', locals: { customer: customer } %>
+<% end %>
+</div>

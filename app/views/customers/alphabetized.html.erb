@@ -1,0 +1,10 @@
+<h1>Customers ordered by name</h1>
+
+<%= link_to 'All Customers', customers_path %>
+<%= link_to 'Customers with Missing Email', missing_email_customers_path %>
+
+<div class = "customers-container">   
+<% @customers.each do |customer| %>
+  <%= render partial: 'customer', locals: { customer: customer } %>
+<% end %>
+</div>
